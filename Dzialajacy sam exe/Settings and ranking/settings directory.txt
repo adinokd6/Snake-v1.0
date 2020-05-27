@@ -1,0 +1,3 @@
+Audio On
+Play with frames On
+Bomb On
