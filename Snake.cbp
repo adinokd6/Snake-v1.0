@@ -9,7 +9,7 @@
 			<Target title="Debug">
 				<Option output="bin/Debug/Snake" prefix_auto="1" extension_auto="1" />
 				<Option object_output="obj/Debug/" />
-				<Option type="1" />
+				<Option type="0" />
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-std=c++14" />
@@ -28,7 +28,7 @@
 			<Target title="Release">
 				<Option output="bin/Release/Snake" prefix_auto="1" extension_auto="1" />
 				<Option object_output="obj/Release/" />
-				<Option type="1" />
+				<Option type="0" />
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
@@ -57,23 +57,28 @@
 			<Add option="-std=c++14" />
 			<Add option="-DSFML_STATIC" />
 			<Add directory="C:/Program Files (x86)/CodeBlocks/Bilblioteki/SFML-2.5.1/include" />
+			<Add directory="Source Files" />
 		</Compiler>
 		<Linker>
+			<Add option="-static-libstdc++" />
+			<Add option="-static-libgcc" />
 			<Add library="sfml-system" />
 			<Add library="sfml-graphics" />
 			<Add library="sfml-network" />
 			<Add library="sfml-window" />
 			<Add directory="C:/Program Files (x86)/CodeBlocks/Bilblioteki/SFML-2.5.1/lib" />
 		</Linker>
-		<Unit filename="Board.cpp" />
-		<Unit filename="Board.hpp" />
-		<Unit filename="Gameview.hpp" />
-		<Unit filename="Snake.cpp" />
-		<Unit filename="Snake.hpp" />
-		<Unit filename="gameview.cpp" />
-		<Unit filename="main.cpp" />
-		<Unit filename="point.cpp" />
-		<Unit filename="point.hpp" />
+		<Unit filename="Source Files/Gameview.hpp" />
+		<Unit filename="Source Files/Menu.cpp" />
+		<Unit filename="Source Files/Menu.hpp" />
+		<Unit filename="Source Files/Snake.cpp" />
+		<Unit filename="Source Files/Snake.hpp" />
+		<Unit filename="Source Files/gameview.cpp" />
+		<Unit filename="Source Files/main.cpp" />
+		<Unit filename="Source Files/point.cpp" />
+		<Unit filename="Source Files/point.hpp" />
+		<Unit filename="Source Files/settings.cpp" />
+		<Unit filename="Source Files/settings.hpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />

@@ -1,28 +1,30 @@
 # depslib dependency file v1.0
-1589212506 source:c:\users\adino\documents\studia\inne do nauki\programy testowe\snake\board.cpp
+1589388434 source:c:\users\adino\documents\studia\inne do nauki\programy testowe\snake\board.cpp
 	"Board.hpp"
 
-1589213091 source:c:\users\adino\documents\studia\inne do nauki\programy testowe\snake\main.cpp
-	"Board.hpp"
+1589577463 source:c:\users\adino\documents\studia\inne do nauki\programy testowe\snake\main.cpp
+	"Menu.hpp"
 	"point.hpp"
 	"Snake.hpp"
+	"Gameview.hpp"
+	<SFML/Audio.hpp>
+	<SFML/Graphics.hpp>
 	<windows.h>
 	<iostream>
 	<conio.h>
-	"Gameview.hpp"
 
-1589210829 source:c:\users\adino\documents\studia\inne do nauki\programy testowe\snake\point.cpp
+1589213258 source:c:\users\adino\documents\studia\inne do nauki\programy testowe\snake\point.cpp
 	"point.hpp"
 	<iostream>
 	<windows.h>
 
-1589213091 source:c:\users\adino\documents\studia\inne do nauki\programy testowe\snake\snake.cpp
+1589660853 source:c:\users\adino\documents\studia\inne do nauki\programy testowe\snake\snake.cpp
 	"Snake.hpp"
 	"point.hpp"
 
 1589211000 c:\users\adino\documents\studia\inne do nauki\programy testowe\snake\point.hpp
 
-1589213258 c:\users\adino\documents\studia\inne do nauki\programy testowe\snake\snake.hpp
+1589632818 c:\users\adino\documents\studia\inne do nauki\programy testowe\snake\snake.hpp
 	"point.hpp"
 	<windows.h>
 	<cstdlib>
@@ -31,7 +33,7 @@
 	<iostream>
 	<deque>
 
-1589208617 c:\users\adino\documents\studia\inne do nauki\programy testowe\snake\board.hpp
+1589385591 c:\users\adino\documents\studia\inne do nauki\programy testowe\snake\board.hpp
 	"Snake.hpp"
 	"point.hpp"
 	<conio.h>
@@ -448,9 +450,322 @@
 	<SFML/Graphics/Drawable.hpp>
 	<SFML/Window/GlResource.hpp>
 
-1589149395 c:\users\adino\documents\studia\inne do nauki\programy testowe\snake\gameview.hpp
+1590064887 c:\users\adino\documents\studia\inne do nauki\programy testowe\snake\gameview.hpp
+	"Snake.hpp"
+	"point.hpp"
+	<Windows.h>
+	<string>
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	<time.h>
+	<iostream>
+	<sstream>
+	<cstdio>
+	<cstdlib>
+	<stdlib.h>
+	<fstream>
+	<vector>
+
+1590064861 source:c:\users\adino\documents\studia\inne do nauki\programy testowe\snake\gameview.cpp
+	"Gameview.hpp"
+	<Windows.h>
+	<cstdlib>
+	<ctime>
+	<cstdio>
+
+1589381575 source:c:\users\adino\desktop\16_games\04 snake\gra.cpp
+	<SFML/Graphics.hpp>
+	<time.h>
+
+1589751894 source:c:\users\adino\documents\studia\inne do nauki\programy testowe\snake\menu.cpp
+	"Menu.hpp"
+
+1589740777 c:\users\adino\documents\studia\inne do nauki\programy testowe\snake\menu.hpp
+	"Gameview.hpp"
+	"settings.hpp"
+	<Windows.h>
+	<string>
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	<algorithm>
+	<fstream>
+
+1525815618 c:\program files (x86)\codeblocks\bilblioteki\sfml-2.5.1\include\sfml\audio.hpp
+	<SFML/System.hpp>
+	<SFML/Audio/InputSoundFile.hpp>
+	<SFML/Audio/Listener.hpp>
+	<SFML/Audio/Music.hpp>
+	<SFML/Audio/OutputSoundFile.hpp>
+	<SFML/Audio/Sound.hpp>
+	<SFML/Audio/SoundBuffer.hpp>
+	<SFML/Audio/SoundBufferRecorder.hpp>
+	<SFML/Audio/SoundFileFactory.hpp>
+	<SFML/Audio/SoundFileReader.hpp>
+	<SFML/Audio/SoundFileWriter.hpp>
+	<SFML/Audio/SoundRecorder.hpp>
+	<SFML/Audio/SoundSource.hpp>
+	<SFML/Audio/SoundStream.hpp>
+
+1525815618 c:\program files (x86)\codeblocks\bilblioteki\sfml-2.5.1\include\sfml\audio\inputsoundfile.hpp
+	<SFML/Audio/Export.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<SFML/System/Time.hpp>
+	<string>
+	<algorithm>
+
+1525815618 c:\program files (x86)\codeblocks\bilblioteki\sfml-2.5.1\include\sfml\audio\export.hpp
+	<SFML/Config.hpp>
+
+1525815618 c:\program files (x86)\codeblocks\bilblioteki\sfml-2.5.1\include\sfml\audio\listener.hpp
+	<SFML/Audio/Export.hpp>
+	<SFML/System/Vector3.hpp>
+
+1525815618 c:\program files (x86)\codeblocks\bilblioteki\sfml-2.5.1\include\sfml\audio\music.hpp
+	<SFML/Audio/Export.hpp>
+	<SFML/Audio/SoundStream.hpp>
+	<SFML/Audio/InputSoundFile.hpp>
+	<SFML/System/Mutex.hpp>
+	<SFML/System/Time.hpp>
+	<string>
+	<vector>
+
+1525815618 c:\program files (x86)\codeblocks\bilblioteki\sfml-2.5.1\include\sfml\audio\soundstream.hpp
+	<SFML/Audio/Export.hpp>
+	<SFML/Audio/SoundSource.hpp>
+	<SFML/System/Thread.hpp>
+	<SFML/System/Time.hpp>
+	<SFML/System/Mutex.hpp>
+	<cstdlib>
+
+1525815618 c:\program files (x86)\codeblocks\bilblioteki\sfml-2.5.1\include\sfml\audio\soundsource.hpp
+	<SFML/Audio/Export.hpp>
+	<SFML/Audio/AlResource.hpp>
+	<SFML/System/Vector3.hpp>
+
+1525815618 c:\program files (x86)\codeblocks\bilblioteki\sfml-2.5.1\include\sfml\audio\alresource.hpp
+	<SFML/Audio/Export.hpp>
+
+1525815618 c:\program files (x86)\codeblocks\bilblioteki\sfml-2.5.1\include\sfml\audio\outputsoundfile.hpp
+	<SFML/Audio/Export.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<string>
+
+1525815618 c:\program files (x86)\codeblocks\bilblioteki\sfml-2.5.1\include\sfml\audio\sound.hpp
+	<SFML/Audio/Export.hpp>
+	<SFML/Audio/SoundSource.hpp>
+	<SFML/System/Time.hpp>
+	<cstdlib>
+
+1525815618 c:\program files (x86)\codeblocks\bilblioteki\sfml-2.5.1\include\sfml\audio\soundbuffer.hpp
+	<SFML/Audio/Export.hpp>
+	<SFML/Audio/AlResource.hpp>
+	<SFML/System/Time.hpp>
+	<string>
+	<vector>
+	<set>
+
+1525815618 c:\program files (x86)\codeblocks\bilblioteki\sfml-2.5.1\include\sfml\audio\soundbufferrecorder.hpp
+	<SFML/Audio/Export.hpp>
+	<SFML/Audio/SoundBuffer.hpp>
+	<SFML/Audio/SoundRecorder.hpp>
+	<vector>
+
+1525815618 c:\program files (x86)\codeblocks\bilblioteki\sfml-2.5.1\include\sfml\audio\soundrecorder.hpp
+	<SFML/Audio/Export.hpp>
+	<SFML/Audio/AlResource.hpp>
+	<SFML/System/Thread.hpp>
+	<SFML/System/Time.hpp>
+	<vector>
+	<string>
+
+1525815618 c:\program files (x86)\codeblocks\bilblioteki\sfml-2.5.1\include\sfml\audio\soundfilefactory.hpp
+	<SFML/Audio/Export.hpp>
+	<string>
+	<vector>
+	<SFML/Audio/SoundFileFactory.inl>
+
+1525815618 c:\program files (x86)\codeblocks\bilblioteki\sfml-2.5.1\include\sfml\audio\soundfilefactory.inl
+
+1525815618 c:\program files (x86)\codeblocks\bilblioteki\sfml-2.5.1\include\sfml\audio\soundfilereader.hpp
+	<SFML/Audio/Export.hpp>
+	<string>
+
+1525815618 c:\program files (x86)\codeblocks\bilblioteki\sfml-2.5.1\include\sfml\audio\soundfilewriter.hpp
+	<SFML/Audio/Export.hpp>
+	<string>
+
+1589739621 source:c:\users\adino\documents\studia\inne do nauki\programy testowe\snake\settings.cpp
+	"settings.hpp"
+
+1589657373 c:\users\adino\documents\studia\inne do nauki\programy testowe\snake\settings.hpp
+	<Windows.h>
+	<string>
+	<SFML/Graphics.hpp>
+	<fstream>
+	<iostream>
+
+1590064861 source:c:\users\adino\documents\studia\cyberbezpieczeñstwo\ii semestr\programowanie obiektowe\projekt\snake\gameview.cpp
+	"Gameview.hpp"
+	<Windows.h>
+	<cstdlib>
+	<ctime>
+	<cstdio>
+
+1590065160 c:\users\adino\documents\studia\cyberbezpieczeñstwo\ii semestr\programowanie obiektowe\projekt\snake\gameview.hpp
+	"Snake.hpp"
+	"point.hpp"
+	<Windows.h>
+	<string>
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	<time.h>
+	<iostream>
+	<sstream>
+	<cstdio>
+	<cstdlib>
+	<stdlib.h>
+	<fstream>
+	<vector>
+
+1589632818 c:\users\adino\documents\studia\cyberbezpieczeñstwo\ii semestr\programowanie obiektowe\projekt\snake\snake.hpp
+	"point.hpp"
+	<windows.h>
+	<cstdlib>
+	<vector>
+	<conio.h>
+	<iostream>
+	<deque>
+
+1589211000 c:\users\adino\documents\studia\cyberbezpieczeñstwo\ii semestr\programowanie obiektowe\projekt\snake\point.hpp
+
+1589577463 source:c:\users\adino\documents\studia\cyberbezpieczeñstwo\ii semestr\programowanie obiektowe\projekt\snake\main.cpp
+	"Menu.hpp"
+	"point.hpp"
+	"Snake.hpp"
+	"Gameview.hpp"
+	<SFML/Audio.hpp>
+	<SFML/Graphics.hpp>
+	<windows.h>
+	<iostream>
+	<conio.h>
+
+1589740777 c:\users\adino\documents\studia\cyberbezpieczeñstwo\ii semestr\programowanie obiektowe\projekt\snake\menu.hpp
+	"Gameview.hpp"
+	"settings.hpp"
+	<Windows.h>
+	<string>
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	<algorithm>
+	<fstream>
+
+1589657373 c:\users\adino\documents\studia\cyberbezpieczeñstwo\ii semestr\programowanie obiektowe\projekt\snake\settings.hpp
+	<Windows.h>
+	<string>
+	<SFML/Graphics.hpp>
+	<fstream>
+	<iostream>
+
+1589751894 source:c:\users\adino\documents\studia\cyberbezpieczeñstwo\ii semestr\programowanie obiektowe\projekt\snake\menu.cpp
+	"Menu.hpp"
+
+1589213258 source:c:\users\adino\documents\studia\cyberbezpieczeñstwo\ii semestr\programowanie obiektowe\projekt\snake\point.cpp
+	"point.hpp"
+	<iostream>
+	<windows.h>
+
+1589739621 source:c:\users\adino\documents\studia\cyberbezpieczeñstwo\ii semestr\programowanie obiektowe\projekt\snake\settings.cpp
+	"settings.hpp"
+
+1589660853 source:c:\users\adino\documents\studia\cyberbezpieczeñstwo\ii semestr\programowanie obiektowe\projekt\snake\snake.cpp
+	"Snake.hpp"
+	"point.hpp"
+
+1589388434 source:c:\users\adino\documents\studia\cyberbezpieczeñstwo\ii semestr\programowanie obiektowe\projekt\snake\source files\board.cpp
 	"Board.hpp"
 
-1589149426 source:c:\users\adino\documents\studia\inne do nauki\programy testowe\snake\gameview.cpp
+1589385591 c:\users\adino\documents\studia\cyberbezpieczeñstwo\ii semestr\programowanie obiektowe\projekt\snake\source files\board.hpp
+	"Snake.hpp"
+	"point.hpp"
+	<conio.h>
+	<iostream>
+	<cstdlib>
+	<windows.h>
+
+1590593580 c:\users\adino\documents\studia\cyberbezpieczeñstwo\ii semestr\programowanie obiektowe\projekt\snake\source files\snake.hpp
+	"point.hpp"
+	<windows.h>
+	<cstdlib>
+	<vector>
+	<conio.h>
+	<iostream>
+	<deque>
+
+1590593758 c:\users\adino\documents\studia\cyberbezpieczeñstwo\ii semestr\programowanie obiektowe\projekt\snake\source files\point.hpp
+
+1590590623 source:c:\users\adino\documents\studia\cyberbezpieczeñstwo\ii semestr\programowanie obiektowe\projekt\snake\source files\gameview.cpp
 	"Gameview.hpp"
+	<Windows.h>
+	<cstdlib>
+	<ctime>
+	<cstdio>
+
+1590592448 c:\users\adino\documents\studia\cyberbezpieczeñstwo\ii semestr\programowanie obiektowe\projekt\snake\source files\gameview.hpp
+	"Snake.hpp"
+	"point.hpp"
+	<Windows.h>
+	<string>
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	<time.h>
+	<iostream>
+	<sstream>
+	<cstdio>
+	<cstdlib>
+	<stdlib.h>
+	<fstream>
+	<vector>
+
+1589381616 source:c:\users\adino\documents\studia\cyberbezpieczeñstwo\ii semestr\programowanie obiektowe\projekt\snake\source files\gra.cpp
+	<SFML/Graphics.hpp>
+	<time.h>
+
+1589147104 source:c:\users\adino\documents\studia\cyberbezpieczeñstwo\ii semestr\programowanie obiektowe\projekt\snake\source files\graphics.cpp
+	"Board.hpp"
+	<SFML/Graphics.hpp>
+
+1590577522 source:c:\users\adino\documents\studia\cyberbezpieczeñstwo\ii semestr\programowanie obiektowe\projekt\snake\source files\main.cpp
+	"Menu.hpp"
+
+1589740777 c:\users\adino\documents\studia\cyberbezpieczeñstwo\ii semestr\programowanie obiektowe\projekt\snake\source files\menu.hpp
+	"Gameview.hpp"
+	"settings.hpp"
+	<Windows.h>
+	<string>
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	<algorithm>
+	<fstream>
+
+1589657373 c:\users\adino\documents\studia\cyberbezpieczeñstwo\ii semestr\programowanie obiektowe\projekt\snake\source files\settings.hpp
+	<Windows.h>
+	<string>
+	<SFML/Graphics.hpp>
+	<fstream>
+	<iostream>
+
+1590592433 source:c:\users\adino\documents\studia\cyberbezpieczeñstwo\ii semestr\programowanie obiektowe\projekt\snake\source files\menu.cpp
+	"Menu.hpp"
+
+1590593805 source:c:\users\adino\documents\studia\cyberbezpieczeñstwo\ii semestr\programowanie obiektowe\projekt\snake\source files\point.cpp
+	"point.hpp"
+	<iostream>
+	<windows.h>
+
+1590071432 source:c:\users\adino\documents\studia\cyberbezpieczeñstwo\ii semestr\programowanie obiektowe\projekt\snake\source files\settings.cpp
+	"settings.hpp"
+
+1590593655 source:c:\users\adino\documents\studia\cyberbezpieczeñstwo\ii semestr\programowanie obiektowe\projekt\snake\source files\snake.cpp
+	"Snake.hpp"
+	"point.hpp"
 
