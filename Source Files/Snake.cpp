@@ -13,7 +13,7 @@ Snake::Snake(): Point()
 
 Snake::Snake(int start_position_x,int start_position_y)
 {
-    Point head(rand()%start_position_x,rand()%start_position_y);
+    Point head(start_position_x,start_position_y);
     body.push_front(head);
 }
 

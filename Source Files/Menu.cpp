@@ -225,7 +225,6 @@ void Menu::play()
 void Menu::sorting()
 {
 
-    std::cout<<"Ile razy sie wykonuje>";
     std::string tmp; //Temporary string to save data from the file
 
 
@@ -236,11 +235,6 @@ void Menu::sorting()
         score_board.push_back(atoi(tmp.c_str()));
     }
     ranking_directory.close();
-
-    for(int i=0;i<score_board.size();i++)
-    {
-        std::cout<<score_board[i]<<std::endl;
-    }
 
     std::sort(score_board.begin(),score_board.end(),std::greater<>());
     auto last=std::unique(score_board.begin(),score_board.end());

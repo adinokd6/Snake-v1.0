@@ -10,12 +10,20 @@
 
 int size=16;//Size [in px] of 1 texture
 
+thread_local std::mt19937 gen{std::random_device{}()};
+
+template<typename T>
+T random(T min, T max)
+{
+    return std::uniform_int_distribution<T>{min, max}(gen);
+}
+
 
 enum GameType{normal=0,frame=1};
 
 using namespace sf;
 
-Gameview::Gameview(sf::RenderWindow &win, sf::Font &fon): snake((rand()%(game_width/16)),(rand()%(game_width/16))),apple((rand()%(game_width/16)-2),(1+rand()%(game_width/16))-2),diamond(40,40),bomb(1000,1000)
+Gameview::Gameview(sf::RenderWindow &win, sf::Font &fon): snake(random(2,game_height/16-2),random(2,game_width/16-2)),apple(random(2,game_height/16-2),random(2,game_width/16-2)),diamond(random(2,game_height/16-2),random(2,game_width/16-2)),bomb(1000,1000)
 {
     window=&win;
     font=&fon;
@@ -224,7 +232,7 @@ if(audio_on==true)
                 {
                     menu=true;
                 }
-                else if(snake.pos_x(0)==1)
+                else if(snake.pos_x(0)==0)
                 {
                     menu=true;
                 }
@@ -232,7 +240,7 @@ if(audio_on==true)
                 {
                     menu=true;
                 }
-                else if(snake.pos_y(0)==1)
+                else if(snake.pos_y(0)==0)
                 {
                     menu=true;
                 }
@@ -269,6 +277,7 @@ if(audio_on==true)
                 }
 
             }
+
 
 
 
@@ -359,12 +368,12 @@ if(audio_on==true)
             if(snake.pos_y(0)==apple.pos_y()&& snake.pos_x(0)==apple.pos_x()) //If snake hit the apple it gets premium points and change the position of apple and bomb
             {
                 snake.add_cell(1000,1000);
-                apple.change_position_x(1+rand()%(game_height/16-2));
-                apple.change_position_y(1+rand()%(game_width/16-2));
+                apple.change_position_x(random(2,game_height/16-2));
+                apple.change_position_y(random(2,game_width/16-2));
                 if(bomb_on==true)
                 {
-                    bomb.change_position_x(rand()%(game_height/16)-2);
-                    bomb.change_position_y(rand()%(game_width/16)-2);
+                    bomb.change_position_x(random(2,game_height/16-2));
+                    bomb.change_position_y(random(2,game_width/16-2));
                 }
 
                 int is_stop=0;
@@ -405,30 +414,28 @@ if(audio_on==true)
             if(snake.pos_y(0)==bomb.pos_y()&&snake.pos_x(0)==bomb.pos_x()&&bomb_on==true) //If snake hit the bomb game end
             {
                 menu=true;
+                break;
             }
 
             if(snake.pos_y(0)==diamond.pos_y()&&snake.pos_x(0)==diamond.pos_x()) //If snake eat diamond...
             {
                 snake.add_cell(1000,1000);
-                diamond.change_position_x(rand()%(game_height/16-2));
-                diamond.change_position_y(rand()%(game_width/16-2));
+                diamond.change_position_x(random(2,game_height/16-2));
+                diamond.change_position_y(random(2,game_width/16-2));
                 score+=40;
             }
 
             score_text.setString(score_to_string);
             window->draw(score_text);
 
-
-
-
-
-
         }
 
 
 
     window->display();//Display the window
-    }
 
+    }
     return score;
+
+
 }
