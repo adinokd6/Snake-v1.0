@@ -703,7 +703,7 @@
 
 1590593758 c:\users\adino\documents\studia\cyberbezpieczeñstwo\ii semestr\programowanie obiektowe\projekt\snake\source files\point.hpp
 
-1590590623 source:c:\users\adino\documents\studia\cyberbezpieczeñstwo\ii semestr\programowanie obiektowe\projekt\snake\source files\gameview.cpp
+1590593823 source:c:\users\adino\documents\studia\cyberbezpieczeñstwo\ii semestr\programowanie obiektowe\projekt\snake\source files\gameview.cpp
 	"Gameview.hpp"
 	<Windows.h>
 	<cstdlib>
@@ -734,10 +734,10 @@
 	"Board.hpp"
 	<SFML/Graphics.hpp>
 
-1590577522 source:c:\users\adino\documents\studia\cyberbezpieczeñstwo\ii semestr\programowanie obiektowe\projekt\snake\source files\main.cpp
+1590665585 source:c:\users\adino\documents\studia\cyberbezpieczeñstwo\ii semestr\programowanie obiektowe\projekt\snake\source files\main.cpp
 	"Menu.hpp"
 
-1589740777 c:\users\adino\documents\studia\cyberbezpieczeñstwo\ii semestr\programowanie obiektowe\projekt\snake\source files\menu.hpp
+1590663844 c:\users\adino\documents\studia\cyberbezpieczeñstwo\ii semestr\programowanie obiektowe\projekt\snake\source files\menu.hpp
 	"Gameview.hpp"
 	"settings.hpp"
 	<Windows.h>
@@ -746,6 +746,7 @@
 	<SFML/Audio.hpp>
 	<algorithm>
 	<fstream>
+	<bits/stdc++.h>
 
 1589657373 c:\users\adino\documents\studia\cyberbezpieczeñstwo\ii semestr\programowanie obiektowe\projekt\snake\source files\settings.hpp
 	<Windows.h>
@@ -754,7 +755,7 @@
 	<fstream>
 	<iostream>
 
-1590592433 source:c:\users\adino\documents\studia\cyberbezpieczeñstwo\ii semestr\programowanie obiektowe\projekt\snake\source files\menu.cpp
+1590666137 source:c:\users\adino\documents\studia\cyberbezpieczeñstwo\ii semestr\programowanie obiektowe\projekt\snake\source files\menu.cpp
 	"Menu.hpp"
 
 1590593805 source:c:\users\adino\documents\studia\cyberbezpieczeñstwo\ii semestr\programowanie obiektowe\projekt\snake\source files\point.cpp

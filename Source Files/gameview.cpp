@@ -402,7 +402,7 @@ if(audio_on==true)
                 window->draw(sprite6);
             }
 
-            if(snake.pos_y(0)==bomb.pos_y()&&snake.pos_x(0)==bomb.pos_x()) //If snake hit the bomb game end
+            if(snake.pos_y(0)==bomb.pos_y()&&snake.pos_x(0)==bomb.pos_x()&&bomb_on==true) //If snake hit the bomb game end
             {
                 menu=true;
             }

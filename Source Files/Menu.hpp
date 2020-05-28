@@ -9,6 +9,7 @@
 #include <SFML/Audio.hpp>
 #include <algorithm>
 #include <fstream>
+#include <bits/stdc++.h>
 
 
 

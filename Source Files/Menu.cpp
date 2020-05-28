@@ -38,6 +38,7 @@ Menu::~Menu(void)
 //Funcion responsible for checking the menu status
 void Menu::runMenu()
 {
+
      while(state!=END)
      {
         switch (state)
@@ -203,23 +204,19 @@ void Menu::play()
 
 
         score_board.push_back(tmp);
-        sorting();
+
 
     }
     if(event.type==sf::Event::Closed)
     {
         state=END;
+        sorting();
     }
     else
     {
        state=MENU;
+       sorting();
     }
-
-
-
-
-
-
 
 }
 
@@ -227,7 +224,9 @@ void Menu::play()
 //Function which is responsible for sorting scores from the file
 void Menu::sorting()
 {
-    std::string tmp;
+
+    std::cout<<"Ile razy sie wykonuje>";
+    std::string tmp; //Temporary string to save data from the file
 
 
     ranking_directory.open("Settings and ranking\\ranking directory.txt",std::ios::in);//Reading the scores
@@ -238,22 +237,29 @@ void Menu::sorting()
     }
     ranking_directory.close();
 
-    sort(score_board.begin(),score_board.end()); //Sorting scores
+    for(int i=0;i<score_board.size();i++)
+    {
+        std::cout<<score_board[i]<<std::endl;
+    }
+
+    std::sort(score_board.begin(),score_board.end(),std::greater<>());
+    auto last=std::unique(score_board.begin(),score_board.end());
+    score_board.erase(last,score_board.end());
+
 
     if(score_board.size()>10) //If the number of scores is higher than 10 then erase it
     {
         score_board.erase(score_board.begin()+10,score_board.end());
     }
 
-
     ranking_directory.open("Settings and ranking\\ranking directory.txt",std::ios::out); //Saving sorted scores to file
     for(int i=0;i<score_board.size();i++)
     {
-        if(score_board[i]>0)
-        {
+//        if(score_board[i]>0)
+//        {
             ranking_directory<<score_board[i];
             ranking_directory<<std::endl;
-        }
+        //}
     }
     ranking_directory.close();
 
@@ -263,6 +269,7 @@ void Menu::sorting()
 //Function which show score ranking
 void Menu::ranking()
 {
+
     Event event;
 
     Vector2f mouse(Mouse::getPosition(window));
@@ -276,6 +283,8 @@ void Menu::ranking()
 
 
     std::string scores_brd[10];
+
+
     for(int i=0;i<10;i++) //It help to get scores in such type  1.Your score
     {
         scores_brd[i]+=std::to_string(i+1);
@@ -352,10 +361,6 @@ void Menu::ranking()
             state=END;
         }
 
-
-
-
     }
-
 
 }
